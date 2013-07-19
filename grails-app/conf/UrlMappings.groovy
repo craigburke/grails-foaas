@@ -8,7 +8,7 @@ class UrlMappings {
         }
         "/$type/$from"(controller: "fuckOff", action: "show")  {
             constraints {
-                type inList: ["this", "that", "everything", "life", "everyone", "pink"]
+                type inList: ["this", "that", "everything", "life", "everyone", "pink", "thanks"]
             }
         }
 

@@ -90,6 +90,9 @@
         <p>Will return content of the form 'Fuck me gently with a chainsaw, :name. Do I look like Mother Teresa? - :from', e.g. /chainsaw/Chris/Heather will return 'Fuck me gently with a chainsaw, Chris. Do I look like Mother Teresa? - Heather</p>
 
 
+        <h3>/thanks/:from</h3>
+        <p>Will return content of the form 'Fuck you very much. - :from'.</p>
+
         <h2 id="credits">Credits</h2>
 
         <p>This is all based off of the concept and API designed by Dionysus (<a href="https://twitter.com/foaas">@foaas</a>). This was ported to a grails app by <a href="http://www.craigburke.com">Craig Burke</a> (<a href="https://twitter.com/craigburke1">@craigburke1</a>).</p>
