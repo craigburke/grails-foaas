@@ -11,9 +11,11 @@
                <h1>FOAAS</h1>
                <h2>Fuck Off As A Service</h2>
 
-               <p>A grails FOAAS implementation based on <a href="http://www.foaas.com">FOAAS v0.0.1</a>.</p>
+               <p>A grails FOAAS implementation based on <a href="http://www.foaas.com">FOAAS v0.0.1</a></p>
 
                <p><strong>Note:</strong> this is not my idea, just my implementation. See <a href="#credits">credits</a> for more details</p>
+
+	       <p><a href="https://github.com/craigburke/grails-foaas" class="btn btn-primary"><i class="icon-file icon-white"></i> View the source on github</a></p>
 
            </div>
        </div>
@@ -90,7 +92,7 @@
 
         <h2 id="credits">Credits</h2>
 
-        <p>This is all based off of the concept and API designed by Dionysus (<a href="https://twitter.com/foaas">@foaas</a>). This was ported to a grails app by Craig Burke (<a href="https://twitter.com/craigburke1">@craigburke1</a>).</p>
+        <p>This is all based off of the concept and API designed by Dionysus (<a href="https://twitter.com/foaas">@foaas</a>). This was ported to a grails app by <a href="www.craigburke.com">Craig Burke</a> (<a href="https://twitter.com/craigburke1">@craigburke1</a>).</p>
 
     </div>
     </div>
