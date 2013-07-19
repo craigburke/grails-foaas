@@ -92,7 +92,7 @@
 
         <h2 id="credits">Credits</h2>
 
-        <p>This is all based off of the concept and API designed by Dionysus (<a href="https://twitter.com/foaas">@foaas</a>). This was ported to a grails app by <a href="www.craigburke.com">Craig Burke</a> (<a href="https://twitter.com/craigburke1">@craigburke1</a>).</p>
+        <p>This is all based off of the concept and API designed by Dionysus (<a href="https://twitter.com/foaas">@foaas</a>). This was ported to a grails app by <a href="http://www.craigburke.com">Craig Burke</a> (<a href="https://twitter.com/craigburke1">@craigburke1</a>).</p>
 
     </div>
     </div>
