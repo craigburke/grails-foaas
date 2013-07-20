@@ -11,6 +11,8 @@ class UrlMappings {
                 type inList: ["this", "that", "everything", "life", "everyone", "pink", "thanks"]
             }
         }
+		
+		"/surpriseMe"(controller: "fuckOff", action: "surpriseMe")
 
         "500"(view:'/error')
         "/**"(view:"/index")
