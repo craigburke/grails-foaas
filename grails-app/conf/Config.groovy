@@ -82,7 +82,6 @@ log4j = {
 }
 
 fuckOff.types = [
-    [type: "random", paramCount: 2],
     [type: "off", paramCount: 2],
     [type: "you", paramCount: 2],
     [type: "donut", paramCount: 2],
