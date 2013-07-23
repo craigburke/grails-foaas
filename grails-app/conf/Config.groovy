@@ -80,3 +80,23 @@ log4j = {
            'org.hibernate',
            'net.sf.ehcache.hibernate'
 }
+
+fuckOff.types = [
+    [type: "random", paramCount: 2],
+    [type: "off", paramCount: 2],
+    [type: "you", paramCount: 2],
+    [type: "donut", paramCount: 2],
+    [type: "shakespeare", paramCount: 2],
+    [type: "linus", paramCount: 2],
+    [type: "king", paramCount: 2],
+    [type: "chainsaw", paramCount: 2],
+    [type: "this", paramCount: 1],
+    [type: "that", paramCount: 1],
+    [type: "everything", paramCount: 1],
+    [type: "life", paramCount: 1],
+    [type: "everyone", paramCount: 1],
+    [type: "pink", paramCount: 1],
+    [type: "thanks", paramCount: 1]
+]
+
+

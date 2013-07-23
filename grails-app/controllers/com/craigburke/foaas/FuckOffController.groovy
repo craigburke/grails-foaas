@@ -1,27 +1,45 @@
 package com.craigburke.foaas
 
 import grails.converters.JSON
-import grails.converters.XML
 
 class FuckOffController {
 
     def index() {}
 
     def show() {
-        def messageArgs = params.to ? [params.to, params.from] : [params.from]
-        String propertyPrefix = "fuckOff.${params.type}"
+        int paramCount = params.name ? 2 : 1
+        def messageArgs = paramCount == 2 ? [params.name, params.from] : [params.from]
 
-        String message = g.message(code: "${propertyPrefix}.message", args: messageArgs, default: '')
-        String subtitle = g.message(code: "${propertyPrefix}.subtitle", args: messageArgs, default: '')
+        String typeName = params.type == "random" ? getRandomType(paramCount) : params.type
+        String configPrefix = "fuckOff.${typeName}"
+
+        renderMessage(configPrefix, messageArgs)
+    }
+
+    def thing() {
+        def messageArgs = [params.thing, params.from]
+        String configPrefix = "fuckOff.thing"
+
+        renderMessage(configPrefix, messageArgs)
+    }
+
+    private def renderMessage(String configPrefix, def messageArgs) {
+
+        String message = g.message(code: "${configPrefix}.message", args: messageArgs)
+        String subtitle = g.message(code: "${configPrefix}.subtitle", args: messageArgs, default: '')
 
         def model = [message: message, subtitle: subtitle]
 
         withFormat {
-            html model
+            html {render view: "show", model: model}
             json {render model as JSON}
             text {render "${message} - ${subtitle}"}
         }
-
     }
 
+    private String getRandomType(int paramCount) {
+        def types = grailsApplication.config.fuckOff.types.findAll {it.paramCount == paramCount}
+        int index = new Random().nextInt(types.size)
+        types[index].type
+    }
 }

@@ -89,13 +89,29 @@
 
         <p>Will return content of the form 'Fuck me gently with a chainsaw, :name. Do I look like Mother Teresa? - :from', e.g. /chainsaw/Chris/Heather will return 'Fuck me gently with a chainsaw, Chris. Do I look like Mother Teresa? - Heather</p>
 
+        <h3>/:thing/:from</h3>
+        <p>Will return content of the form 'Fuck :thing. - :from', e.g. /pineapples/%E2%99%A5%20Chris will return 'Fuck pineapples. - ♥ Chris'</p>
 
         <h3>/thanks/:from</h3>
         <p>Will return content of the form 'Fuck you very much. - :from'.</p>
 
+        <h3>/random/:name/:from or /random/:from</h3>
+        <p>Will return a random message</p>
+
+
         <h2 id="credits">Credits</h2>
 
         <p>This is all based off of the concept and API designed by Dionysus (<a href="https://twitter.com/foaas">@foaas</a>). This was ported to a grails app by <a href="http://www.craigburke.com">Craig Burke</a> (<a href="https://twitter.com/craigburke1">@craigburke1</a>).</p>
+
+        <p>The community is grateful for the contributions from the following thought leaders:<br />
+
+        <ul>
+            <li>Dhiraj Mahapatro (<a href="https://twitter.com/dhirajmahapatro">@dhirajmahapatro</a>)</li>
+            <li>Dan Woods (<a href="https://twitter.com/danveloper">@danveloper</a>)</li>
+        </ul>
+
+
+        </p>
 
     </div>
     </div>
